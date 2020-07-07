@@ -1,6 +1,5 @@
 package com.company;
 
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -11,11 +10,10 @@ public class Main {
         Scanner inp = new Scanner( System.in );
         System.out.println( "please enter a value" );
         String value = inp.nextLine( ).toUpperCase( );
-        result(value);
+        result( value );
     }
 
-    private static void result (String value){
-
+    private static void result ( String value ) {
         char[] result = value.toCharArray( );
         Set<Character> evenNumb = new HashSet<>( );
         Set<Character> notEvenNumb = new HashSet<>( );
@@ -32,18 +30,17 @@ public class Main {
         int x = 0;
         int y = 0;
 
-        for (int i : evenNumb
-        ) {
+        for (int i : evenNumb) {
             x = x + i;
         }
 
-        for (int i : notEvenNumb
-        ) {
+        for (int i : notEvenNumb) {
             y = y + i;
         }
 
         char f = (char) Math.abs( x - y );
-        System.out.println( Math.abs( x - y ) );
-        System.out.println( f );
+        System.out.println("result in character: " + f );
+        System.out.println("result in decimal system: " + Math.abs( x - y ) );
+
     }
 }
