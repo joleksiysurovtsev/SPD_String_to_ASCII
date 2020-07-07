@@ -15,7 +15,7 @@ public class Main {
     }
 
     private static void result (String value){
-        //string to character array
+
         char[] result = value.toCharArray( );
         Set<Character> evenNumb = new HashSet<>( );
         Set<Character> notEvenNumb = new HashSet<>( );
@@ -29,9 +29,6 @@ public class Main {
             }
         }
 
-        System.out.println( evenNumb.toString( ) );
-        System.out.println( notEvenNumb.toString( ) );
-
         int x = 0;
         int y = 0;
 
@@ -44,9 +41,6 @@ public class Main {
         ) {
             y = y + i;
         }
-
-        System.out.println( x );
-        System.out.println( y );
 
         char f = (char) Math.abs( x - y );
         System.out.println( Math.abs( x - y ) );
