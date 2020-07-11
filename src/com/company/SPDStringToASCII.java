@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class SPDStringToASCII {
 
-	public static int sumASCIICharArray (Set<Integer> sI) {
+	public static int sumElementsSet (Set<Integer> sI) {
 		return sI.stream().mapToInt(i -> i).sum();
 	}
 
@@ -22,6 +22,6 @@ public class SPDStringToASCII {
 			}
 		}
 
-		return Math.abs(sumASCIICharArray(evenNumb) - sumASCIICharArray(notEvenNumb));
+		return Math.abs(sumElementsSet(evenNumb) - sumElementsSet(notEvenNumb));
 	}
 }
