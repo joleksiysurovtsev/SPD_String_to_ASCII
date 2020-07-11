@@ -6,6 +6,8 @@ public class Main {
 
 	public static void main (String[] args) {
 		System.out.println("please enter a value");
-		SPDStringToASCII.stToASCII(new Scanner(System.in).nextLine().toUpperCase());
+		int s = SPDStringToASCII.stToASCII(new Scanner(System.in).nextLine().toUpperCase());
+		System.out.println("result in character: " + (char) s);
+		System.out.println("result in decimal system: " + s);
 	}
 }
