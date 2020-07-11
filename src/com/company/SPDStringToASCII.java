@@ -10,7 +10,7 @@ public class SPDStringToASCII {
 	}
 
 	public static int stToASCII (String value) {
-		char[] result = value.toCharArray();
+		char[] result = value.toUpperCase().toCharArray();
 		Set<Integer> evenNumb = new HashSet<>();
 		Set<Integer> notEvenNumb = new HashSet<>();
 
